@@ -11,7 +11,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-[#f3f2f1]">
       <Header />
-      
       <main className="container mx-auto px-4 py-8 space-y-8">
         <div className="flex items-center space-x-2">
           <ChevronLeft className="h-4 w-4" />

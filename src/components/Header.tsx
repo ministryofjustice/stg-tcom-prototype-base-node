@@ -10,5 +10,15 @@ export const Header = () => {
           <Menu className="h-6 w-6" />
         </Button>
       </div>
+      <div className="container govuk-phase-banner px-4 py-4">
+      <p className="govuk-phase-banner__content">
+        <strong className="govuk-tag govuk-phase-banner__content__tag">
+          Prototype
+        </strong>
+        <span className="govuk-phase-banner__text">
+          This is a Prototype service not yet ready for public use.
+        </span>
+      </p>
+    </div>
     </header>;
 };
