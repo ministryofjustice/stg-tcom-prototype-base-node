@@ -7,11 +7,13 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
-
+  // httpAuth plugin expects env variables at vite build time
+  // - need to ensure these are in place in pipeline
+  // & maybe k8s config map for cloud platform deployments
   return ({
     server: {
       host: "::",
-      port: 8080,
+      port: 3000,
     },
     plugins: [
       react(),

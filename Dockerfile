@@ -23,4 +23,6 @@ USER 1017
 
 EXPOSE 3000
 
-CMD [ "serve", "-s", "dist" ]
+# workaround to get vite driven basic auth into container
+# never use for Alpha / beta
+CMD ["npm", "run", "dev"]
